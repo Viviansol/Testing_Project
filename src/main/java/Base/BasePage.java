@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static java.sql.DriverManager.getDriver;
-
 public class BasePage {
     public static WebDriver driver;
     protected static final String URL = "http://fe.deitech.online/";
