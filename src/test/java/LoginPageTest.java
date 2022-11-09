@@ -22,5 +22,18 @@ public class LoginPageTest {
 
     }
 
+    @Test
+    public void LoginFlowTest() throws InterruptedException{
+        page = new LoginPage();
+        page.openApp();
+        page.iniciarSessao();
+        page.insertLoginData("viviansan93@gmail.com", "123456");
+        Thread.sleep(2000);
+        page.Login();
+        Thread.sleep(2000);
+
+
+    }
+
 
 }
