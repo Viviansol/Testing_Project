@@ -16,6 +16,8 @@ public class LoginPageTest {
 
     @Test
     public void loginFlowTest() throws InterruptedException{
+        page = new LoginPage();
+        page.openApp();
         page.iniciarSessao();
         page.insertLoginData("viviansan93@gmail", "123");
         Thread.sleep(2000);

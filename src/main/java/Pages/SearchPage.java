@@ -12,7 +12,7 @@ public class SearchPage extends BasePage {
     public void searchLocal (String local) throws InterruptedException{
 
         WebElement searchBox = getWebElement(By.xpath(searchInput));
-        searchBox.clear();
+        //searchBox.clear();
         searchBox.sendKeys(local);
         Thread.sleep(2000);
         searchBox.sendKeys(Keys.ENTER);
